@@ -10,15 +10,21 @@ public class Ex10 {
 		 정수 다섯개를 입력받아 가장 큰 수를 출력하세요.
 		 */
 		Scanner sc = new Scanner(System.in);
+		
+		int[] intArray =  new int[5];
 		System.out.println("숫자를 입력하세요.");
-		for (int i = 1; i <=5; i++) {
+		int max = intArray[0];
+		for (int i = 0; i < intArray.length; i++) {
 			System.out.print("숫자: ");
-			int n = sc.nextInt();
+			intArray[i]=sc.nextInt();
+			
+			if(intArray[i] > max) {
+				max = intArray[i];
+				//System.out.println(max);
+			}
 			
 		}
-		
-		
-		
+		System.out.println("최댓값: " + max);
 		
 		
 		
