@@ -23,7 +23,7 @@ public class Ex14 {
 				System.out.print(i + "+");
 			}
 		}
-		System.out.println("합계" + sum);
+		System.out.println("합계: " + sum);
 		
 		
 		sc.close();
